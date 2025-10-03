@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-manifest-1
+  labels:
+    app: back
+    env: prod
+spec:
+  containers:
+    - name: web
+      image: nginx
+
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-manifest-2
+  labels:
+    app: front
+    env: prod
+spec:
+  containers:
+    - name: web
+      image: nginx
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: label-manifest-3
+  labels:
+    app: front
+    env: dev
+spec:
+  containers:
+    - name: web
+      image: nginx
