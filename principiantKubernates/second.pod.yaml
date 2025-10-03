@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pod-manifesto-2
+spec:
+  containers:
+    - name: web
+      image: nginx
+    - name: web2
+      image: python:3.9
+      command: ["python", "-m","http.server", "8080"]
+      ports:
+        - containerPort: 8080
