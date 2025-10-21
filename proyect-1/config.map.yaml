@@ -1,0 +1,8 @@
+#Its a .env but its used to set public .env as url, or any, but its not used to set sensitive data
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configmap
+  namespace: default
+data:
+  URL_API: "http://localhost:3000"
