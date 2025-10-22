@@ -1,0 +1,13 @@
+# 1. Genera un Pod llamado "web" con imagen nginx, sin crearlo
+
+# 2. Edita web.yaml y añade una livenessProbe HTTP en /, puerto 80
+# (agrega bajo containers:):
+#   livenessProbe:
+#     httpGet:
+#       path: /
+#       port: 80
+
+# 3. Aplica el manifiesto
+
+
+# 4. Verifica que el Pod esté corriendo
